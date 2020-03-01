@@ -1,0 +1,169 @@
+.navbar{
+	padding: 0!important; 
+	background-color: #f19f1f;
+	margin-right:0!important;
+	height: 70px;
+	display: block;
+}
+
+.navbar-collapse{
+	float: right;
+}
+
+.navbar .navbar-brand{
+  height: 100%;
+  padding: 0;
+  float: left;
+}
+
+.navbar-brand img{
+  height: 100%;
+}
+
+.nav-item{
+	padding: 15px 20px;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	position:relative;
+	
+}
+
+.nav-item:hover .sub-menu{
+	max-height: 1000px;
+}
+
+.nav-item .sub-menu{
+	position:absolute;
+	left:0;
+	background-color:#108896;
+	-moz-appearance: none;
+  	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	margin-top: 15px;
+	list-style-type:none;
+	padding: 0;
+	color: #fff;
+	max-height:0;
+	overflow:hidden;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	z-index: 10;
+	width: 150px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.sub-nav-item{
+	padding: 15px 20px;
+}
+.sub-nav-item:hover{
+	background-color:#e60000;
+}
+.nav-item a{
+	color:#fff!important;
+	
+}
+.active{
+	background-color: #e60000;
+}
+.nav-item:hover{
+	background-color: #108896;
+	
+}
+
+
+
+.mobile-menu-show{
+	display: none;
+}
+
+.mobile-menu-show i{
+    line-height: 70px;
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+}
+
+.mobile-navigation{
+    background-color: #f19f1f;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;	
+}
+
+.show-mobile-navigation{
+	z-index: 30;
+	opacity: 1;
+}
+
+
+.mobile-navigation .nav-link{
+	width: 50%;
+	max-width: 200px;
+	float: left;
+}
+
+.open-sub-menu{
+	float: left;
+    max-width: 300px;
+    width: 50%;
+}
+
+.open-sub-menu i{
+    line-height: 39px;
+    font-size: 21px;
+    color: #fff;
+    margin-right: 20px;
+    position: relative;
+    border-left: 1px solid #ffffff9e;
+    padding-left: 20px;
+}
+
+.open-mobile-submenu{
+	background-color: #108896;
+}
+
+.open-mobile-submenu .sub-menu{
+	max-height: 1000px !important;
+    padding-top: 12px;
+	
+}
+
+.mobile-navigation .nav-item:hover .sub-menu{
+	max-height: 0;
+}
+
+@media (max-width: 992px){
+
+  .navbar-collapse{
+    display: none;
+  }
+
+  .mobile-menu-show{
+	display: block;
+    cursor: pointer;
+    float: right;
+    width: 70px;
+  }
+
+  .nav-item .sub-menu{
+  	width: 100%;
+    display: block;
+    position: unset;
+  }
+
+}
